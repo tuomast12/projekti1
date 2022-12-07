@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScaleActivity">
+
+    <Button
+        android:id="@+id/buttonLoistava"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="5 - Loistava"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <Button
+        android:id="@+id/buttonHyvä"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="4 - Hyvä"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="3 - Kohtalainen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/buttonHuono"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="2 - Huono"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/buttonSurkea"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="1 - Surkea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/kaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KA"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/vointiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Millainen on vointisi?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoistava"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaTextView" />
+
+    <TextView
+        android:id="@+id/viimeisenPaivanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viimeisen X päivän keskiarvosi:"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/kaTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/takaisinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Takaisin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSurkea" />
+</androidx.constraintlayout.widget.ConstraintLayout>
