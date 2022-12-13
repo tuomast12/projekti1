@@ -20,6 +20,9 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".mainPage_test"
+            android:exported="false" />
+        <activity
             android:name=".ScaleActivity"
             android:exported="true">
             <meta-data
