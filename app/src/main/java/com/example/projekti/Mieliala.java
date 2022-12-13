@@ -4,9 +4,10 @@ public class Mieliala {
     private int summa;
     private int maara;
 
-    public Mieliala(){
-        this.summa = 0;
-        this.maara = 0;
+
+    public Mieliala(int summa, int maara){
+        this.summa = summa;
+        this.maara = maara;
     }
 
     public int getMaara(){
@@ -18,11 +19,22 @@ public class Mieliala {
         return ka;
     }
 
+    public String getStringKa(){
+        double ka = (double) (this.summa)/(this.maara);
+        String kaString = String.format("%.2f", ka);
+
+        return kaString;
+    }
+
     public void lisaaMaara(){
         this.maara++;
     }
 
     public void lisaaSumma(int luku){
         this.summa += luku;
+    }
+
+    public int getSumma(){
+        return this.summa;
     }
 }
